@@ -64,6 +64,9 @@ footer{
 element.style{
     scroll-behavior: smooth;
 }
+html{
+    scroll-behavior: smooth:
+}
 .foodname{
     text-decoration: none;
     scroll-behavior: smooth;
