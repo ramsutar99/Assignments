@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form{
+            width: 300px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: white;
+            
+        }
+        body{
+            background-color: aqua;
+        }
+        .input{
+            width: 280px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="/LernVern/redirect.html" method="post">
+        <h1>Registration Form</h1><hr>
+        Name :<br> <input class="input" type="text" name="name" id="" required ><br>
+        Email :<br> <input class="input" type="email" name="email" id="" required> <br>
+        Password :<br> <input class="input" type="password" name="password" id="" required><br>
+        DOB :<br> <input class="input" type="date" name="date" id=""><br>
+        Gender :<br> <input type="radio" name="Gender" id="">Male</input>
+                    <input type="radio" name="Gender" id="">Female</input><br>
+        Interests :<br> <input type="checkbox" name="" id="">Movies</input>
+                    <input type="checkbox" name="" id="" >Sports </input><br>
+        City:<br> <select class="input" name="city" id="">
+            <option value=""></option>
+            <option value="">Mumbai</option>
+            <option value="">Pune</option>
+        </select><br>
+        Address : <br><textarea class="input" name="address" id="" cols="10" rows="5"></textarea><br>
+        <input type="submit" name="" id="">
+
+
+    </form>
+</body>
+</html>
