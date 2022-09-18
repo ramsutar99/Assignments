@@ -19,20 +19,21 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./productPreview/previewStyle.css">
   </head>
   <body>
     <!-- header part which is fixed -->
     <header>
       <div class="header">
         <!-- logo  -->
-        <div class="logo">
+        <div class="logo" onclick="showHomePage()">
           <h2><span id="shop">shop</span>lane</h2>
         </div>
         <!-- header links -->
         <div class="links">
           <ul>
-            <li><a href="">clothing</a></li>
-            <li><a href="">accessories</a></li>
+            <li><a href="#cloth" onclick="showHomePage()">clothing</a></li>
+            <li><a href="#accessories" onclick="showHomePage()">accessories</a></li>
           </ul>
         </div>
         <!-- search bar  -->
@@ -47,7 +48,7 @@
           />
         </div>
         <!-- cart redirect link -->
-        <div class="cart-link">
+        <div class="cart-link" onclick="showCart()">
           <i class="fa fa-shopping-cart">
             <span id="cart-count">0</span>
           </i>
@@ -81,7 +82,7 @@
     </header>
     <!-- section 1 = Home Page -->
 
-    <section id="home-page-section">
+    <div id="home-page-section">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -129,15 +130,32 @@
         </div>
         
       </div>
-    </section>
+    </div>
     <!-- section 2 = Product Preview Page -->
-    <section id="product-preview-page-section">
-
-    </section>
+    <div id="product-preview-page-section">
+          
+    </div>
     <!-- section 3 = Cart  -->
-    <section id="cart-section"></section>
+    <div id="cart-section">
+      <h2>Checkout</h2>
+      <br>
+      <h3>Total Items: <span id="itemIncartcount">0</span></h3>
+      <div class="cartHolder">
+        <div class="productsInCart">
+          
+        </div>
+        <div class="totalAmountHolder">
+            <h4>Total Amount</h4>
+            <h5>Amount: Rs <span id="finalAmount">0</span></h5>
+            <button id="placeOrderBtn" onclick="showOrderPlaced()">Place Order</button>
+        </div>
+      </div>
+    </div>
     <!-- section 4 = Order Placed Preview -->
-    <section id="order-placed-section"></section>
+    <div id="order-placed-section">
+      <img src="https://c.tenor.com/BSY1qTH8g-oAAAAC/check.gif" alt="" id="orderPlacedLogo">
+      <h2>Your Order is Placed Successfully! :)</h2>
+    </div>
 
     <!-- footer section Not-fixed -->
     <div class="footer1">
