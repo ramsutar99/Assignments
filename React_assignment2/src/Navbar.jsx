@@ -48,7 +48,7 @@ const Navbar = () => {
 
           {/* <!-- header content of information starts here --> */}
           <div className="headinfo">
-            {/* EdYoda is free learning and knowledge sharing platform for techies */}
+            EdYoda is free learning and knowledge sharing platform for techies
           </div>
           <div className="button">
             <button className="gotobtn">
