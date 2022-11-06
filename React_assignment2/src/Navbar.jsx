@@ -15,7 +15,7 @@ const Navbar = () => {
 
           {/* <!-- dropdown menu starts here --> */}
 
-          {/* <div className="dropdown">
+          <div className="dropdown">
             <label htmlFor="lists">Explore Categories</label>
             <select name="catlog" id="lists">
               <option value=""></option>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <option value="others">Others</option>
             </select>
           </div>
-          <!-- dropdown menu ends here --> */}
+          {/* <!-- dropdown menu ends here --> */}
 
           {/* <!-- header content of information starts here --> */}
           <div className="headinfo">
