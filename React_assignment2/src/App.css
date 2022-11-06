@@ -38,7 +38,7 @@
       .headinfo {
         font-family: Raleway, sans-serif;
         padding-top: 12px;
-        /* width: 380px; */
+        width: 380px;
         color: rgba(0, 0, 0, 0.6);
         cursor: wait;
       }
